@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>八卦炉</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.6 -->
+		<link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+		<!--iconfont-->
+		<link rel="stylesheet" href="../iconfont/iconfont.css">
+		<!-- owners style -->
+		<link rel="stylesheet" href="../stylesheets/index.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../node_modules/_jquery@3.2.1@jquery/dist/jquery.min.js"></script>
+		<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>  
+<div id="ie6-warning">您正在使用 Internet Explorer版本过低，在本页面的显示效果可能有差异。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" mce_href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 11</a> 或以下浏览器： <a href="http://www.mozillaonline.com/" mce_href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN" mce_href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/" mce_href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/" mce_href="http://www.operachina.com/">Opera</a>  
+</div>  
+<![endif]-->
+
+		<div class="index-header" style="height:100px;">
+			<header>
+				<img src="../images/logo.png" class="logo" alt="logo">
+				<div class="login">
+					<img src="../images/head.jpg">
+					<a class="login-name" href="#">登陆</a>
+					<a class="registry" href="#">注册</a>
+				</div>
+			</header>
+			<nav class="index-navbar">
+				<a href="#" class="index-wholenav col-lg-1"><span class="iconfont icon-taocanxinxi"></span>全部导航</a>
+				<ul class="col-lg-7 col-md-8 col-sm-8">
+					<li class="index-navItem">
+						<a href="#">平台首页</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">你问我答</a>
+					</li>
+					<li class="index-navItem index-nabItem-active">
+						<a href="#">论坛社区</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">资料应用</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">视频学堂</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">新闻资讯</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">积分兑换</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">价格比对</a>
+					</li>
+					<li class="index-navItem">
+						<a href="#">项目外包</a>
+					</li>
+				</ul>
+				<div class="search-bar col-lg-4 col-md-4 col-sm-4">
+					<input type="text" class="search-input" placeholder="搜索...">
+					<button class="search-btn"><span class="iconfont icon-xingtaiduICON_sousuo--"></span></button>
+				</div>
+				<!--<div class="search-bar col-lg-4 col-md-4 col-sm-4">
+					<input type="text" class="search-input" placeholder="有问题，先搜索...">
+					<button class="search-btn"><span class="iconfont icon-xingtaiduICON_sousuo--"></span></button>
+				</div>-->
+			</nav>
+
+		</div>
+		<article class="wenda-detail-banner">
+			<div class="container">
+				<div class="wenda-detail-bannerTitle col-sm-2">八卦炉问答</div>
+				<div class="col-sm-7">
+					<div class="wenda-banner-search">
+						<input type="text" placeholder="搜索你需要的答案...">
+						<a href="#">搜索</a>
+					</div>
+					<div class="wenda-banner-tips text-center">
+						<dl>
+							<dt>热门推荐搜索：</dt>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+							<dd>
+								<a href="#">单片机</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<span class="wenda-detail-noAnswers">找不到帖子？</span>
+					<a class="lutan-fatie-btn" href="#"><span class="iconfont icon-fatiezi">&nbsp;</span>我要发帖</a>
+				</div>
+			</div>
+		</article>
+		<article class="wenda-detail-content">
+			<div class ="container">
+				<section class="col-md-3 col-sm-3">
+					<!--sidebar 第一部分-->
+	<div class ="wenda-sidebar-right">
+						<div class="wenda-sidebar-title">栏目导航</div>
+						<div class="panel-group wenda-sidebar-content" id="accordion">
+							<div class="panel pannel-noneBg">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				              <a href="#collapseOne">
+					                                                                    论坛首页
+					                <span class="iconfont icon-shouye"></span>
+				              </a>
+			                </h4>
+								</div>
+							</div>
+							<div class="panel pannel-noneBg">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				              <a href="#collapseOne">
+					                                                                    最新热门
+					                <span class="iconfont icon-remen1"></span>
+				              </a>
+			                </h4>
+								</div>
+							</div>
+							<div class="panel pannel-noneBg">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				              <a href="#collapseOne">
+					                                                                    最新精华
+					                <span class="iconfont icon-zuixin"></span>
+				              </a>
+			                </h4>
+								</div>
+							</div>
+							<div class="panel pannel-noneBg">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				              <a href="#collapseOne">
+					                                                                    最新发表
+					                <span class="iconfont icon-zuixin1"></span>
+				              </a>
+			                </h4>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseTwo">
+					衣
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseThree">
+					食
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseFour">
+					嵌入式
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseFive">
+					软件开发
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseFive" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseSix">
+					硬件开发
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseSix" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseSeven">
+					人工智能
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseSeven" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseEight" alt="点击展开">
+					大数据
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseEight" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseNine">
+					数据库
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseNine" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseTen">
+					网络通信与协议
+					<span class="iconfont icon-jia"></span>
+				</a>
+			</h4>
+								</div>
+								<div id="collapseTen" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									   <a data-toggle="collapse" data-parent="#accordion" 
+									   href="#collapseEleven">
+									   数字电路与模拟电路
+									   <span class="iconfont icon-jia"></span>
+									   </a>
+									</h4>
+								</div>
+								<div id="collapseEleven" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="wenda-sidebar-tips">
+											<dl>
+
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+												<dd>
+													<a href="#">单片机</a>
+												</dd>
+
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+			</section>
+			
+			<section class="col-md-9 col-sm-9">
+				<div class="luntan-content">
+					  <div class="luntan-content-media">
+					  	<div class="luntan-content-mediaImg col-sm-6">
+					  		<img src="../images/luntan1.png">
+					  	</div>
+					  	<div class="luntan-content-Medialists col-sm-6">
+					  		<h3>大数据时代--数据复合技术处理</h3>
+						    <p class="luntan-media-secondTitle">在网站设计中，如何容许大量用户同时涌入是技术关键。</p>
+						    <ul>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛,是快捷酒店</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间节点就发发挥好个好好干</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，手机号返回</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，的鸡肤鹤发</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，附件二环发货人复合弓</a></li>
+						    </ul>
+					  	</div>
+					  	<div class="luntan-content-remen">
+					  		<div class="luntan-content-remenTitle col-sm-12">
+					  			最新精华
+					  		</div>
+					  		<!--精华一-->
+					  		<div class="luntan-content-remenLists remenLists-item1 col-sm-6">
+					  		  <h3>软件开发</h3>
+					  		  <img src="../images/remenList1.jpg">
+						      <p class="luntan-remen-secondTitle">在网站设计中，如何容许大量用户同时涌入是技术关键。</p>
+						      <ul>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛,是快捷酒店</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间节点就发发挥好个好好干</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，手机号返回</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，的鸡肤鹤发</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，附件二环发货人复合弓</a></li>
+						      </ul>
+					  	    </div>
+					  	    <!--精华二-->
+					  	    <div class="luntan-content-remenLists remenLists-item2 col-sm-6">
+					  		  <h3>精彩活动</h3>
+					  		  <img src="../images/remenList1.jpg">
+						      <p class="luntan-remen-secondTitle">在网站设计中，如何容许大量用户同时涌入是技术关键。</p>
+						      <ul>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛,是快捷酒店</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间节点就发发挥好个好好干</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，手机号返回</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，的鸡肤鹤发</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，附件二环发货人复合弓</a></li>
+						      </ul>
+					  	    </div>
+					  	    <!--精华三-->
+					  	    <div class="luntan-content-remenLists remenLists-item3 col-sm-6">
+					  		  <h3>数据库</h3>
+					  		  <img src="../images/remenList1.jpg">
+						      <p class="luntan-remen-secondTitle">在网站设计中，如何容许大量用户同时涌入是技术关键。</p>
+						      <ul>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛,是快捷酒店</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间节点就发发挥好个好好干</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，手机号返回</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，的鸡肤鹤发</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，附件二环发货人复合弓</a></li>
+						      </ul>
+					  	    </div>
+					  	    <!--精华四-->
+					  	    <div class="luntan-content-remenLists remenLists-item4 col-sm-6">
+					  		  <h3>网络通信与协议</h3>
+					  		  <img src="../images/remenList1.jpg">
+						      <p class="luntan-remen-secondTitle">在网站设计中，如何容许大量用户同时涌入是技术关键。</p>
+						      <ul>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛,是快捷酒店</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，时间节点就发发挥好个好好干</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，手机号返回</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，的鸡肤鹤发</a></li>
+						    	<li><a href="#">[软件开发]阿里巴巴全新前端论坛，附件二环发货人复合弓</a></li>
+						      </ul>
+					  	    </div>
+					  	</div>
+					  </div>
+				</div>
+			</section>
+		 </div>
+		</article>
+
+		<!--底部footer部分-->
+		<footer class="index-footer">
+			<div class="container">
+				<p class="index-footerBottom">Copyright © 2017 南京元芯联盟信息科技有限公司版权所有</p>
+			</div>
+		</footer>
+		<script>
+			$(function(){
+				$(".panel").each(function(index,item){
+					$(this).click(function(){
+						if($(this).find("span.iconfont").hasClass("icon-jia")){
+							$(this).find("span.iconfont").toggleClass("icon-jia").addClass("icon-minus-fill");
+							$(this).siblings().find("span.icon-minus-fill").toggleClass("icon-minus-fill").toggleClass("icon-jia");
+						}
+						else if($(this).find("span.iconfont").hasClass("icon-minus-fill")){
+							$(this).find("span.iconfont").toggleClass("icon-minus-fill").addClass("icon-jia");
+						}
+					})
+				})
+			})
+		</script>
+	</body>
+
+</html>

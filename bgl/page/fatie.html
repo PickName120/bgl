@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>八卦炉</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <!--iconfont-->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <!-- owners style -->
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../node_modules/_jquery@3.2.1@jquery/dist/jquery.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+<div id="ie6-warning">您正在使用 Internet Explorer版本过低，在本页面的显示效果可能有差异。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" mce_href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 11</a> 或以下浏览器： <a href="http://www.mozillaonline.com/" mce_href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN" mce_href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/" mce_href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/" mce_href="http://www.operachina.com/">Opera</a>
+</div>
+<![endif]-->
+
+    <div class="index-header" style="height:100px;">
+      <header>
+        <img src="../images/logo.png" class="logo" alt="logo">
+        <div class="login">
+          <img src="../images/head.jpg">
+          <a class="login-name" href="#">登陆</a>
+          <a class="registry" href="#">注册</a>
+        </div>
+      </header>
+      <nav class="index-navbar">
+        <a href="#" class="index-wholenav col-lg-1"><span class="iconfont icon-taocanxinxi"></span>全部导航</a>
+        <ul class="col-lg-7 col-md-8 col-sm-8">
+          <li class="index-navItem">
+            <a href="#">平台首页</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">你问我答</a>
+          </li>
+          <li class="index-navItem index-nabItem-active">
+            <a href="#">论坛社区</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">资料应用</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">视频学堂</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">新闻资讯</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">积分兑换</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">价格比对</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">项目外包</a>
+          </li>
+        </ul>
+        <div class="search-bar col-lg-4 col-md-4 col-sm-4">
+          <input type="text" class="search-input" placeholder="搜索...">
+          <button class="search-btn"><span class="iconfont icon-xingtaiduICON_sousuo--"></span></button>
+        </div>
+        <!--<div class="search-bar col-lg-4 col-md-4 col-sm-4">
+          <input type="text" class="search-input" placeholder="有问题，先搜索...">
+          <button class="search-btn"><span class="iconfont icon-xingtaiduICON_sousuo--"></span></button>
+        </div>-->
+      </nav>
+
+    </div>
+    <article class="wenda-detail-banner">
+      <div class="container">
+        <div class="wenda-detail-bannerTitle col-sm-2">八卦炉问答</div>
+        <div class="col-sm-7">
+          <div class="wenda-banner-search">
+            <input type="text" placeholder="搜索你需要的答案...">
+            <a href="#">搜索</a>
+          </div>
+          <div class="wenda-banner-tips text-center">
+            <dl>
+              <dt>热门推荐搜索：</dt>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <span class="wenda-detail-noAnswers">找不到帖子？</span>
+          <a class="lutan-fatie-btn" href="#"><span class="iconfont icon-fatiezi">&nbsp;</span>我要发帖</a>
+        </div>
+      </div>
+    </article>
+    <article class="luntan-detail-main">
+      <div class="container">
+      <section class="luntan-detail-breadcrumb">
+        <ol class="breadcrumb">
+            <li>
+              <a href="#"><span class="iconfont icon-shouye" style="font-size:12px;"></span>&nbsp;平台首页</a>
+            </li>
+            <li>
+              <a href="#">论坛首页</a>
+            </li>
+            <li class="active">发帖</li>
+          </ol>
+      </section>
+      <section class="fatie-forms">
+        <div class="fatie-forms-caption">
+             <h3>发表帖子</h3>
+             <div class="fatie-forms-headBtns">
+               <a href="#"><span class="iconfont icon-fatiezi"></span>发帖</a>
+             </div>
+        </div>
+        <div class="fatie-form-group">
+           <form  role="form">
+                    <div class="form-group col-sm-2">
+                       <select class="form-control input-md">
+                          <option value="">请选择类型</option>
+                          <option value="">类型1</option>
+                          <option value="">类型2</option>
+                          <option value="">类型3</option>
+                          <option value="">类型4</option>
+                          <option value="">类型5</option>
+                       </select>
+                     </div>
+                     <div class="form-group">
+                         <div class="form-group col-sm-6">
+                                <input type="text" class="form-control" id="inputPassword"
+                                   placeholder="请输入标题">
+                                   <span class="fatie-form-limit">最多100个字</span>
+                         </div>
+                     </div>
+          </form>
+        </div>
+        <div class="wenda-detail-pinlunForm wenda-detail-pinlun2">
+              <form role="form">
+                      <div class="form-group wenda-detail-pinlunMain">
+                         <textarea class="form-control" id="pinlunForm" placeholder="请写下你的评论..."></textarea>
+                         <div class="wenda-detail-pinlunBtns">
+                              <a href="#" class="btn btn-default">取消</a>
+                              <a href="#" class="btn btn-info">发表帖子</a>
+                         </div>
+                      </div>
+               </form>
+          </div>
+      </section>
+    </div>
+  </article>
+<!--底部footer部分-->
+    <footer class="index-footer">
+      <div class="container">
+        <p class="index-footerBottom">Copyright © 2017 南京元芯联盟信息科技有限公司版权所有</p>
+      </div>
+    </footer>
+
+  </body>
+  </html>
