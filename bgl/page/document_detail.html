@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>八卦炉</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <!--iconfont-->
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <!-- owners style -->
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../node_modules/_jquery@3.2.1@jquery/dist/jquery.min.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+<div id="ie6-warning">您正在使用 Internet Explorer版本过低，在本页面的显示效果可能有差异。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" mce_href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 11</a> 或以下浏览器： <a href="http://www.mozillaonline.com/" mce_href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.google.com/chrome/?hl=zh-CN" mce_href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.apple.com.cn/safari/" mce_href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/" mce_href="http://www.operachina.com/">Opera</a>
+</div>
+<![endif]-->
+
+    <div class="index-header" style="height:100px;">
+      <header>
+        <img src="../images/logo.png" class="logo" alt="logo">
+        <div class="login">
+          <img src="../images/head.jpg">
+          <a class="login-name" href="#">登陆</a>
+          <a class="registry" href="#">注册</a>
+        </div>
+      </header>
+      <nav class="index-navbar">
+        <a href="#" class="index-wholenav col-lg-1"><span class="iconfont icon-taocanxinxi"></span>全部导航</a>
+        <ul class="col-lg-7 col-md-8 col-sm-8">
+          <li class="index-navItem">
+            <a href="#">平台首页</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">你问我答</a>
+          </li>
+          <li class="index-navItem index-nabItem-active">
+            <a href="#">论坛社区</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">资料应用</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">视频学堂</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">新闻资讯</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">积分兑换</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">价格比对</a>
+          </li>
+          <li class="index-navItem">
+            <a href="#">项目外包</a>
+          </li>
+        </ul>
+        <div class="search-bar col-lg-4 col-md-4 col-sm-4">
+          <input type="text" class="search-input" placeholder="搜索...">
+          <button class="search-btn"><span class="iconfont icon-xingtaiduICON_sousuo--"></span></button>
+        </div>
+        <!--<div class="search-bar col-lg-4 col-md-4 col-sm-4">
+          <input type="text" class="search-input" placeholder="有问题，先搜索...">
+          <button class="search-btn"><span class="iconfont icon-xingtaiduICON_sousuo--"></span></button>
+        </div>-->
+      </nav>
+
+    </div>
+    <article class="wenda-detail-banner">
+      <div class="container">
+        <div class="wenda-detail-bannerTitle col-sm-2">八卦炉问答</div>
+        <div class="col-sm-7">
+          <div class="wenda-banner-search">
+            <input type="text" placeholder="搜索你需要的答案...">
+            <a href="#">搜索</a>
+          </div>
+          <div class="wenda-banner-tips text-center">
+            <dl>
+              <dt>热门推荐搜索：</dt>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+              <dd>
+                <a href="#">单片机</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <span class="wenda-detail-noAnswers">找不到文档？</span>
+          <a class="lutan-fatie-btn" href="#"><span class="iconfont icon-tiezi">&nbsp;</span>上传文档</a>
+        </div>
+      </div>
+    </article>
+    <article class="luntan-detail-main">
+      <div class="container">
+      <section class="luntan-detail-banner">
+        <img src="../images/luntan_detail.jpg">
+      </section>
+      <section class="luntan-detail-breadcrumb">
+        <ol class="breadcrumb">
+            <li>
+              <a href="#"><span class="iconfont icon-shouye" style="font-size:12px;"></span>&nbsp;平台首页</a>
+            </li>
+            <li>
+              <a href="#">文库首页</a>
+            </li>
+            <li>
+               <a href="#">单片机</a>
+            </li>
+            <li class="active">历史故事</li>
+          </ol>
+      </section>
+      <section class="document-detail">
+         <div class="document-detail-title">
+           <h3>历史故事</h3>
+           <p>文档类型:<span>DOC</span></p>
+           <a href="#" class="document-download-btn"><i class="iconfont icon-xiazai"></i>下载文档</a>
+         </div>
+         <div class="document-base-info">
+              <ul>
+                <li class="document-author">
+                      <img src="../images/head.jpg">
+                      <span>张良</span>
+                </li>
+                <li class="document-base">
+                      <span>上传于2017-11-14</span>
+                      <span><i class="iconfont icon-liulan"></i>11次</span>
+                      <span><i class="iconfont icon-xiazai1"></i>11次</span>
+                </li>
+                <li class="document-shoucang">
+                  <a href="#"><i class="iconfont icon-shoucang">&nbsp;</i><span>0收藏</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="iconfont icon-xiazai">&nbsp;</i>下载</a>
+                </li>
+              </ul>
+         </div>
+      </section>
+      <!-- 文档内容部分 -->
+      <section class="document-main-content">
+      <div class="col-sm-9">
+          <div class="document-main-words">
+              的霍华德和得很惨都会好的就撒翻山倒海回复后龙卷风 数据库电话费是东方红卡死东方航空受理但返回阿坤级是否多快好省电话费啊收到货发卡行上岛咖啡卡绝地反击阿斯蒂芬阿坤函数的奥斯卡电话费按时发的护发素电话费哈水电费哈时代峻峰阿克江水电费哈克斯电话费哈坎就是动画发卡行的历法has灯红酒绿卡萨丁发号京口大师傅按时大富科技安徽分阿斯蒂芬和阿萨德副科级按时发的卡回复的快啦水电费 可结案了惊世毒妃哈加快速度发哈健康是福回家啊数据库的发斯蒂芬 阿克苏交电话费框架是倒海翻江看喀什发动机卡收到放假安徽省大富科技阿克苏就疯狂拉升的合肥了回家啊傻快点饭卡上电话费杰卡斯地方哈加快速度返回按时电话费啊快捷键has抠脚大汉放假阿斯加德方红我瓦尔特我去问题我奥斯浮雕费覅偶尔  奥诶乏味覅 阿斯殴打法守法第一  阿斯噢if提阿斯蒂芬阿斯东方阿萨帝φ收到放假 阿斯殴打搜到覅斯蒂芬 我未接玩就多少妇女节卡斯蒂芬 就看到分局经费激怒的骄傲的负二分的方法 我阿斯蒂芬咖啡机及诶覅四等奖覅饥饿雷克萨的开发阿萨德积分卡斯蒂芬卡萨丁金风科技斯蒂芬奥斯卡的解放撒的解放阿斯东方惊世毒妃奥斯卡戴假发时代峻峰爱神的箭发斯蒂芬。
+              <img src="../images/course1.jpg">
+              hshhdhdhAIEFWRIFO 的设计计算机圣诞节饭就是放假的覅啊搜ID是法人个非人格结构我二姑家沃尔交给我IE机构我人文景观我ower关键我IEorg的历法has灯红酒绿卡萨丁发号京口大师傅按时大富科技安徽分阿斯蒂芬和阿萨德副科级按时发的卡回复的快啦水电费 可结案了惊世毒妃哈加快速度发哈健康是福回家啊数据库的发斯蒂芬 阿克苏交电话费框架是倒海翻江看喀什发动机卡收到放假安徽省大富科技阿克苏就疯狂拉升的合肥了回家啊傻快点饭卡上电话费杰卡斯地方哈加快速度返回按时电话费啊快捷键has抠脚大汉放假阿斯加德方红我瓦尔特我去问题我奥斯浮雕费覅偶尔  奥诶乏味覅 阿斯殴打法守法第一  阿斯噢if提阿斯蒂芬阿斯东方阿萨帝φ收到放假 阿斯殴打搜到覅斯蒂芬 我未接玩就多少妇女节卡斯蒂芬 就看到分局经费激怒的骄傲的负二分的方法 我阿斯蒂芬咖啡机及诶覅四等奖覅饥饿雷克萨的开发阿萨德积分卡斯蒂芬卡萨丁金风科技斯蒂芬奥斯卡的解放撒的解放阿斯东方惊世毒妃奥斯卡戴假发时代峻峰爱神的箭发斯蒂芬。
+          </div>
+          <div class="wenda-detail-pinlunForm wenda-detail-pinlun1" style="display:block;">
+                  <!--评论内容-->
+                  <div class="wenda-detail-level2">
+                       <div class="wenda-level2-item">
+                       <div class="col-sm-3 wenda-level2-headInfo">
+                          <img src="../images/head.jpg">
+                       <a href="#">张量</a>
+
+                       </div>
+                     <div class="col-sm-7 level2-item-mian">
+                    你说的很好，我非常赞同宿建德江倒好还发挥好黄飞鸿电话回访的花非花导航导航黄飞鸿导航导航黄飞鸿的回复哈哈返回的带合肥还好的 带合肥回合肥导航导航黄飞鸿发挥好的灯火辉煌发的互动互动；
+                     </div>
+                     <div class="col-sm-2 wenda-level2-reply">
+                    <a href="#">回复</a>
+                     </div>
+                       </div>
+                       <div class="wenda-level2-item">
+                       <div class="col-sm-3 wenda-level2-headInfo">
+                          <img src="../images/head.jpg">
+                       <a href="#">争锋</a>
+                          <span>回复</span>
+                          <span>张量</span>
+                       </div>
+                     <div class="col-sm-7 level2-item-mian">
+                    你说的很好，我非常赞同
+                     </div>
+                     <div class="col-sm-2 wenda-level2-reply">
+                    <a href="#">回复</a>
+                     </div>
+                       </div>
+                      </div>
+
+            <form role="form">
+                          <div class="form-group wenda-detail-pinlunMain">
+                             <textarea class="form-control" id="pinlunForm" placeholder="请写下你的评论..."></textarea>
+                             <div class="wenda-detail-pinlunBtns">
+                              <a href="#" class="btn btn-default">取消</a>
+                              <a href="#" class="btn btn-info">评论</a>
+                             </div>
+                          </div>
+                        </form>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3">
+             <div class="news-item-creat">
+             <h3><span class="iconfont icon-zuixin1"></span>深度原创</h3>
+             </div>
+             <div class="wenda-content-main" id="wendaNavHtml">
+                 <div class="wenda-main-lists">
+                     <!-- wenda-main-item -->
+                     <div class="wenda-main-item">
+                     <div class="col-sm-4 wenda-main-itemImg">
+                         <img src="../images/course1.jpg">
+                       </div>
+                       <div class="col-sm-8 wenda-main-itemText">
+                         <h3>大数据时代--数据复合技术处理</h3>
+                         <p class="wenda-itemText-content">
+                           在网站设计中，如何容许大量用户同时涌入是技术关键。如今计算机已经深入到每一个行业，企业依靠所存放的这些业务数       据进行决策，因此企业的数据如何存放也掀起了一股热潮，根据不同的企业级别，实施不同的存储计划。
+                         </p>
+                       </div>
+                     </div>
+                     <!-- wenda-main-item -->
+                     <div class="wenda-main-item">
+                     <div class="col-sm-4 wenda-main-itemImg">
+                         <img src="../images/course1.jpg">
+                       </div>
+                       <div class="col-sm-8 wenda-main-itemText">
+                         <h3>大数据时代--数据复合技术处理</h3>
+                         <p class="wenda-itemText-content">
+                           在网站设计中，如何容许大量用户同时涌入是技术关键。如今计算机已经深入到每一个行业，企业依靠所存放的这些业务数       据进行决策，因此企业的数据如何存放也掀起了一股热潮，根据不同的企业级别，实施不同的存储计划。
+                         </p>
+                       </div>
+                     </div>
+                     <!-- wenda-main-item -->
+                     <div class="wenda-main-item">
+                     <div class="col-sm-4 wenda-main-itemImg">
+                         <img src="../images/course1.jpg">
+                       </div>
+                       <div class="col-sm-8 wenda-main-itemText">
+                         <h3>大数据时代--数据复合技术处理</h3>
+                         <p class="wenda-itemText-content">
+                           在网站设计中，如何容许大量用户同时涌入是技术关键。如今计算机已经深入到每一个行业，企业依靠所存放的这些业务数       据进行决策，因此企业的数据如何存放也掀起了一股热潮，根据不同的企业级别，实施不同的存储计划。
+                         </p>
+                       </div>
+                     </div>
+                     <!-- wenda-main-item -->
+                     <div class="wenda-main-item">
+                     <div class="col-sm-4 wenda-main-itemImg">
+                         <img src="../images/course1.jpg">
+                       </div>
+                       <div class="col-sm-8 wenda-main-itemText">
+                         <h3>大数据时代--数据复合技术处理</h3>
+                         <p class="wenda-itemText-content">
+                           在网站设计中，如何容许大量用户同时涌入是技术关键。如今计算机已经深入到每一个行业，企业依靠所存放的这些业务数       据进行决策，因此企业的数据如何存放也掀起了一股热潮，根据不同的企业级别，实施不同的存储计划。
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+
+             </div>
+             <!--sidebar 第二部分-->
+          <div class="wenda-sidebar-right">
+            <div class="wenda-sidebar-title">其他问答<a href="#" class="wenda-sidebar-moreBtn">更多</a></div>
+            <div class="wenda-sidebar-content">
+              <ul class="wenda-sidebar-redian">
+                <li><a href="#">
+                  <span>1</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>2</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>3</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>4</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>5</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>6</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>7</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+                <li><a href="#">
+                  <span>8</span>
+                  <span>十九大召开的意义，完成国家智能时代执行</span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+<!--底部footer部分-->
+    <footer class="index-footer">
+      <div class="container">
+        <p class="index-footerBottom">Copyright © 2017 南京元芯联盟信息科技有限公司版权所有</p>
+      </div>
+    </footer>
+    <script>
+       $(function(){
+        // shoucang按钮点击
+        $(".document-shoucang").click(function(){
+          var scString=$(this).find("span").text();
+          var scNum=parseInt(scString);
+          $(this).toggleClass("click-icon");
+          if($(this).hasClass("click-icon")){
+            scNum++;
+          }else{
+            scNum--;
+          }
+          $(this).find("span").text(scNum+"收藏");
+
+        })
+       })
+    </script>
+  </body>
+  </html>
